@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meyer.css">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><!--Astronomical Pictures of the Day--></h1>
+            <p id="tagline">From June 16th of 1995 to the present day</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="apod_titular">
+                <div class="apod_title">A Total Eclipse of the Sun</div>
+                <div class="apod_date">December 9th, 2021</div>
+            </div>
+
+            <div class="apod_content"> <!-- grid for larger sizes-->
+                <div id="stack">
+                    <img class="apod_img_preview" src="https://apod.nasa.gov/apod/image/2112/SOLARECLIPSE2021FORDISTROHighRes1024.jpg" alt="A Total Eclipse of the Sun">
+                    <input type="submit" aria-label="Add to the Favorites Gallery" value="Add to Favorites">
+                </div> <!-- end of stack -->
+                
+                <p class="apod_explanation">Few were able to stand in the Moon's shadow and watch the December 4 total eclipse of the Sun. Determined by celestial mechanics and not geographical boundaries, the narrow path of totality tracked across planet Earth's relatively inaccessible southernmost continent. Still, some enthusiastic and well-insulated eclipse chasers were rewarded with the dazzling spectacle in Antarctica's cold but clear skies. Taken just before the brief totality began, this image from a ground-based telescope inside the edge of the shadow path at Union Glacier catches a glimmer of sunlight near the top of the silhouetted lunar disk. Look closely for the pinkish solar prominences arcing above the Sun's limb. During totality, the magnificent solar corona, the Sun's outer atmosphere, made its much anticipated appearance, seen in the composite view streaming far from the Sun's edge.</p>
+
+            </div> <!-- end of apod_content -->
+        </div> <!-- end container -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <form> 
+                <label for="date_picker"></label>
+                <div>
+                    <input type="date" id="date_picker" name="date_picker">
+                    <input type="submit" aria-label="Retrieve APOD">
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
